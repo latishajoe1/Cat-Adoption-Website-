@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=1280" />
+        <title>Forever and Ever Homes for Felines</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Forever and Ever Homes for Felines</h1>
+            <button id="toggle-mode">Toggle Light/Dark Mode</button>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#cats">Meet the Cats</a></li>
+                <li><a href="#game">Cat Game</a></li>
+                <li><a href="#Contact">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section id="cats">
+                <h2>Meet Our Adoptable Cats</h2>
+                <div id="cat-buttons"></div>
+                <div id="cat-display"></div>
+            </section>
+
+            <section id="game">
+                <h2>Guess the Cat's Favorite Number</h2>
+                <p>Pick a number from 1 to 10 and see if can you guess our mystery cat!</p>
+                <input type="number" id="guess-input" min="1" max="10" />
+                <button id="submit-guess">Submit Guess</button>
+                <p id="game-result"></p>
+            </section>
+
+            <section id="contact">
+                <h2>Contact Us About Adoption</h2>
+                <form id="contact-form">
+                    <input type="text" id="name" placeholder="Your Full Name" required /><br />
+                    <input type="tel" id="phone" placeholder="Phone Number" required /><br />
+                    <input type="email" id="email" placeholder="Email Address" required /><br />
+                    <textarea id="comments" placeholder="Tell us why you want to adopt!" required></textarea><br />
+                    <label><input type="radio" name="contact-method" value="phone" /> Phone</label>
+                    <label><input type="radio" name="contact-method" value="email" /> Email</label><br />
+                    <button type="submit">Submit</button>
+                    <p id="form-message"></p>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Forever and Ever Homes for Felines</p>
+        </footer>
+    </body>
+</html>
